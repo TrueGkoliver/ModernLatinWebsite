@@ -1,0 +1,125 @@
+{
+	"__NOUN" : null,
+	"__NOUN_PARTICIPLES" : {
+		
+	},
+	"__VERB" : {
+		"__comment" : "use id for the mood required",
+		"indicative" : {
+			1 : ["m", "mus", "sis"],
+			2 : ["s", "tis"],
+			3 : ["t", "nt"],
+			4 : ["nare", "qere"]
+		},
+		"subjuntive" : {
+			1 : ["num", "numus", "nusseis"],
+			2 : ["nus", "nutis"],
+			3 : ["nut", "nunt"],
+			4 : ["nequr", "nequres"]
+		},
+		"conditional" : {
+			1 : ["rem", "remus", "resseis"],
+			2 : ["res", "retis"],
+			3 : ["ret", "rent"],
+			4 : ["reqir", "reqiris"]
+		},
+		"opative" : {
+			1 : ["jem", "jemus", "jessis"],
+			2 : ["jes", "jetis"],
+			3 : ["jet", "jent"],
+			4 : ["jequr", "jerqers"]
+		},
+		"imperative" : {
+			1 : ["eom", "eomus", "eoessis"],
+			2 : ["e", "ete"],
+			3 : ["etut", "etont"],
+			4 : ["eipi", "eipis"]
+		},
+		"hypothetical" : {
+			1 : ["cem", "cemus", "cessis"],
+			2 : ["ces", "cetis"],
+			3 : ["cet", "cent"],
+			4 : ["cequ", "ceques"]
+		},
+		"potential" : {
+			1 : ["qom", "qomus", "qessis"],
+			2 : ["qos", "qotis"],
+			3 : ["qot", "qont"],
+			4 : ["ququ", "ququs"]
+		},
+		"superpotential" : {
+			1 : ["qoum", "qoumus", "qossis"],
+			2 : ["qous", "qoutis"],
+			3 : ["qout", "qount"],
+			4 : ["qour", "quorete"]
+		},
+		"subpotential" : {
+			1 : ["qem", "qemus", "qeussis"],
+			2 : ["qes", "qetis"],
+			3 : ["qet", "qent"],
+			4 : ["qeur", "qeurete"]
+		}
+	},
+	"__VERB_GENERICS" : {
+		"infinitive" : "re",
+		"question" : ["ne"]
+	},
+	"__VERB_TENSES" : {
+		"present" : {
+			"perfect" : ["", false],
+			"imperfect" : ["bu", false],
+			"active" : ["qi", false],
+			"passive" : ["to", false]
+		},
+		"past" : {
+			"perfect" : ["i", true],
+			"imperfect" : ["ba", false],
+			"active" : ["qa", false],
+			"passive" : ["ta", false]
+		},
+		"future" : {
+			"perfect" : ["pi", false],
+			"imperfect" : ["ici", false],
+			"active" : ["qusi", false],
+			"passive" : ["mi", false]
+		},
+		"future-in-past" : {
+			"perfect" : ["no", false],
+			"imperfect" : ["imi", true],
+			"active" : ["iti", true],
+			"passive" : ["ja", false]
+		}
+	},
+	"__TO_BE" : {
+		"infinitive" : "essere",
+		"present" : {
+			"perfect" : {
+				1 : ["sum", "sumus", "essis"],
+				2 : ["es", "estis"],
+				3 : ["est", "sunt"],
+				4 : ["Inare", "Iuqere"]
+			},
+			"imperfect" : "suru",
+			"active" : "siru",
+			"passive" : "sumu"
+		},
+		"past" : {
+			"perfect" : "fuie",
+			"imperfect" : "era",
+			"active" : "fi",
+			"passive" : "fa"
+		},
+		"future" : {
+			"perfect" : "eri",
+			"imperfect" : "ero",
+			"active" : "aro",
+			"passive" : "erase"
+		},
+		"future-in-past" : {
+			"perfect" : "pi",
+			"imperfect" : "pero",
+			"active" : "paro",
+			"passive" : "pere"
+		}
+	}
+}

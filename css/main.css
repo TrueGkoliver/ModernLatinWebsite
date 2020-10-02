@@ -1,0 +1,107 @@
+table, th, td {
+	border: 1px solid black;
+}
+.hidden {
+	display: none;
+}
+.selected {
+	animation-name: getYourAttentionAnimation;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: linear;
+}
+.selected:hover {
+	animation-name: getYourAttentionAnimation-hover;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: linear;
+}
+b.verb_table {
+	display: inline-block;
+}
+@keyframes getYourAttentionAnimation-hover {
+	0% { 
+		color: red;
+		transform: rotate(0deg);
+	}
+	10% { 
+		transform: rotate(-10deg); 
+	}
+	20% {
+		transform: rotate(10deg);
+		}
+	30% {
+		color: red;
+		transform: rotate(-10deg);
+	}
+	40% {
+		transform: rotate(10deg);
+		}
+	50% {
+		color: red;
+		transform: rotate(-10deg);
+	}
+	60% {
+		transform: rotate(10deg);
+		}
+	70% {
+		color: red;
+		transform: rotate(-10deg);
+	}
+	80% {
+		transform: rotate(10deg);
+		}
+	90% {
+		color: red;
+		transform: rotate(-10deg);
+	}
+	100% { 
+		color: black; 
+		transform: rotate(0deg);
+	}
+	
+}
+@keyframes getYourAttentionAnimation {
+	0% { 
+		color: red;
+		transform: rotate(0deg);
+	}
+	10% { 
+		transform: rotate(-10deg); 
+	}
+	20% {
+		transform: rotate(10deg);
+		}
+	30% {
+		color: red;
+		transform: rotate(-10deg);
+	}
+	40% {
+		transform: rotate(10deg);
+		}
+	50% {
+		color: red;
+		transform: rotate(-10deg);
+	}
+	60% {
+		transform: rotate(10deg);
+		}
+	70% {
+		color: red;
+		transform: rotate(-10deg);
+	}
+	80% {
+		transform: rotate(10deg);
+		}
+	90% {
+		color: red;
+		transform: rotate(-10deg);
+	}
+	100% { 
+		color: black; 
+		transform: rotate(0deg);
+	}
+	
+}
