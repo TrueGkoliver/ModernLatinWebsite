@@ -104,12 +104,15 @@ function createEsse(tense, aspect, voice) {
 	//var tbr = document.createElement("p");
 	var tbr = document.createElement("table");
 	let thead = tbr.createTHead();
+	let personh = document.createElement("th");
 	let s = document.createElement("th");
 	let p = document.createElement("th");
 	let pe = document.createElement("th");
+	personh.innerHTML = "Person";
 	s.innerHtml = "Singular";
 	p.innerHTML = "Plural";
 	pe.innerHTML = "Plural (Exclusive)";
+	thead.appendChild(personh);
 	thead.appendChild(s);
 	thead.appendChild(p);
 	thead.appendChild(pe);
@@ -125,6 +128,16 @@ function createEsse(tense, aspect, voice) {
 		tbr.insertRow(2),
 		tbr.insertRow(3)
 	]
+	var f1stPerson = whatever[0].insertCell(0);
+	var f2ndPerson = whatever[1].insertCell(0);
+	var f3rdPerson = whatever[2].insertCell(0);
+	var f4thPerson = whatever[3].insertCell(0);
+	f1stPerson.innerHTML="<b>1st</b>";
+	f2ndPerson.innerHTML="<b>2nd</b>";
+	f3rdPerson.innerHTML="<b>3rd</b>";
+	f4thPerson.innerHTML="<b>4th</b>";
+	
+	
 	
 	var d;
 	for (d = 0; d < persons.length; d++) {
@@ -133,7 +146,7 @@ function createEsse(tense, aspect, voice) {
 		if (person==1) {
 			for (e = 0; e < plural_1stperson.length; e++) {
 				var pluralIn = plural_1stperson[e];
-				var cell = whatever[d].insertCell(e);
+				var cell = whatever[d].insertCell(e+1);
 				cell.innerHTML = createIndividualEsse(tense, aspect, voice, person, pluralIn);
 				//document.write(createEsse(tense, aspect, mood, person, pluralIn));
 				count++;
@@ -168,12 +181,15 @@ function createVerb(tense, aspect, voice, infinitive, perfective) {
 	var tbr = document.createElement("table");
 	tbr.className = "verb_table";
 	let thead = tbr.createTHead();
+	let personh = document.createElement("th");
 	let si = document.createElement("th");
 	let p = document.createElement("th");
 	let pe = document.createElement("th");
+	personh.innerHTML = "Person";
 	si.innerHTML = "Singular";
 	p.innerHTML = "Plural";
 	pe.innerHTML = "Plural (Exclusive)";
+	thead.appendChild(personh);
 	thead.appendChild(si);
 	thead.appendChild(p);
 	thead.appendChild(pe);
@@ -189,7 +205,14 @@ function createVerb(tense, aspect, voice, infinitive, perfective) {
 		tbr.insertRow(2),
 		tbr.insertRow(3)
 	]
-	
+	var f1stPerson = whatever[0].insertCell(0);
+	var f2ndPerson = whatever[1].insertCell(0);
+	var f3rdPerson = whatever[2].insertCell(0);
+	var f4thPerson = whatever[3].insertCell(0);
+	f1stPerson.innerHTML="<b>1st</b>";
+	f2ndPerson.innerHTML="<b>2nd</b>";
+	f3rdPerson.innerHTML="<b>3rd</b>";
+	f4thPerson.innerHTML="<b>4th</b>";
 	var d;
 	for (d = 0; d < persons.length; d++) {
 		var person = persons[d];
@@ -197,7 +220,7 @@ function createVerb(tense, aspect, voice, infinitive, perfective) {
 		if (person==1) {
 			for (e = 0; e < plural_1stperson.length; e++) {
 				var pluralIn = plural_1stperson[e];
-				var cell = whatever[d].insertCell(e);
+				var cell = whatever[d].insertCell(e+1);
 				cell.innerHTML = createIndividualWord(tense, aspect, voice, person, pluralIn, infinitive, perfective);
 				//document.write(createEsse(tense, aspect, mood, person, pluralIn));
 				count++;
@@ -206,7 +229,7 @@ function createVerb(tense, aspect, voice, infinitive, perfective) {
 		else {
 			for (e = 0; e < plural.length; e++) {
 				var pluralIn = plural[e];
-				var cell = whatever[d].insertCell(e);
+				var cell = whatever[d].insertCell(e+1);
 				cell.innerHTML = createIndividualWord(tense, aspect, voice, person, pluralIn, infinitive, perfective);
 				//document.write(createEsse(tense, aspect, mood, person, pluralIn));
 				count++;
