@@ -4,6 +4,12 @@ table, th, td {
 .hidden {
 	display: none;
 }
+#master_selection {
+	display: inline-block;
+}
+#selection_stuff, #jump {
+	display: inline-block;
+}
 .selected {
 	animation-name: getYourAttentionAnimation;
 	animation-duration: 1s;

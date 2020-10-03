@@ -23,7 +23,39 @@ function titleCase(str) {
 	}
 	return str.join(' ');
 }
+var tense_aspect_matchups = {
+	"present-perfect" : "I walk.",
+	"present-imperfect" : "I am walking.",
+	"present-active" : "I have walked.",
+	"present-passive" : "I have been walking.",
+	
+	"past-perfect" : "I walked.",
+	"past-imperfect" : "I was walking.",
+	"past-active" : "I had walked.",
+	"past-passive" : "I had been walking.",
+	
+	"future-perfect" : "I will walk.",
+	"future-imperfect" : "I will be walking.",
+	"future-active" : "I will have walked.",
+	"future-passive" : "I will have been walking.",
+	
+	"future-in-past-perfect" : "I would walk.",
+	"future-in-past-imperfect" : "I would be walking.",
+	"future-in-past-active" : "I would have walked.",
+	"future-in-past-passive" : "I would have been walking." 
+}
 
+var mood_descriptors = {
+	"indicative" : "(A fact)",
+	"subjunctive" : "(A request)",
+	"conditional" : "(Part of a conditional statement)",
+	"opative" : "(A wish or desire)",
+	"imperative" : "(A command)",
+	"hypothetical" : "(Hypothetical)",
+	"potential" : "(A possibility)",
+	"superpotential" : "(A likely possibility)",
+	"subpotential" : "(An unlikely possibility)"
+}
 
 
 
@@ -125,7 +157,9 @@ function createIndividualWord(tense, aspect, voice, person, number, infinitive, 
 		tbr+=perfective;
 	} else {
 		tbr+=infinitive;
+		
 	}
+	tbr+=verbTenses[tense][aspect][0];
 	tbr+=verbs[voice][person][number-1];
 	return tbr;
 }
@@ -192,6 +226,7 @@ function clearHidden() {
 	document.getElementById("selection-aspect").className = "";
 	document.getElementById("selection-mood").className = "";
 	document.getElementById("jump_button").className = "";
+	document.getElementById("sentencefor").className = "";
 }
 function jump() {
 	var currentElement = document.getElementsByClassName("selected");
@@ -246,7 +281,17 @@ function processVerbs() {
 	}
 	
 }
-
+function updateSentence() {
+	var tense_getter = document.getElementById("selection-tense");
+	var aspect_getter = document.getElementById("selection-aspect");
+	var mood_getter = document.getElementById("selection-mood");
+	var tense = tense_getter.options[tense_getter.selectedIndex].value;
+	var aspect = aspect_getter.options[aspect_getter.selectedIndex].value;
+	var mood = mood_getter.options[mood_getter.selectedIndex].value;
+	
+	var sentence = tense_aspect_matchups[tense+"-"+aspect]+" "+mood_descriptors[mood];
+	document.getElementById("sentencefor").innerHTML = sentence;
+}
 var count = 0;
 function startWork() {
 	

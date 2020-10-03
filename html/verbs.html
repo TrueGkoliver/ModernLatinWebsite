@@ -7,43 +7,47 @@
 	<body>
 		
 		<h2>Verb Maker!</h2>
-		<div id="selection_stuff">
-			<label for="infinitive-box">Infinitive:</label>
-			<input name="infinitive-box" id="infinitive-box"></input>
-			<br />
-			<label for="perfective-box">Perfective:</label>
-			<input name="perfective-box" id="perfective-box"></input>
-			<br />
-			<button onClick="processVerbs()">Process Verb</button>
-			<br />
+		<div id="master_selection">
+			<div id="selection_stuff">
+				<label for="infinitive-box">Infinitive:</label>
+				<input name="infinitive-box" id="infinitive-box"></input>
+				<br />
+				<label for="perfective-box">Perfective:</label>
+				<input name="perfective-box" id="perfective-box"></input>
+				<br />
+				<button onClick="processVerbs()">Process Verb</button>
+				<br />
+			</div>
+			<script src="../js/essemaker.js"></script>
+			<div id="jump">
+				<select onchange="updateSentence()" id="selection-tense" class="hidden">
+					<option value="present">Present</option>
+					<option value="past">Past</option>
+					<option value="future">Future</option>
+					<option value="future-in-past">Future-In-Past</option>
+				</select>
+				<select onchange="updateSentence()" id="selection-aspect" class="hidden">
+					<option value="perfect">Perfect</option>
+					<option value="imperfect">Imperfect</option>
+					<option value="passive">Passive</option>
+					<option value="active">Active</option>
+				</select>
+				<select onchange="updateSentence()" id="selection-mood" class="hidden">
+					<option value="indicative">Indicative</option>
+					<option value="subjunctive">Subjunctive</option>
+					<option value="conditional">Conditional</option>
+					<option value="opative">Opative</option>
+					<option value="imperative">Imperative</option>
+					<option value="hypothetical">Hypothetical</option>
+					<option value="potential">Potential</option>
+					<option value="superpotential">Superpotential</option>
+					<option value="subpotential">Subpotential</option>
+				</select>
+				<br />
+				<p id=sentencefor class=hidden>I walk. (A fact)</p>
+				<button id="jump_button" class="hidden" onClick="jump()">Jump to area</button>
+			</div>
 		</div>
-		<script src="../js/essemaker.js"></script>
-		
-		<select id="selection-tense" class="hidden">
-			<option value="present">Present</option>
-			<option value="past">Past</option>
-			<option value="future">Future</option>
-			<option value="future-in-past">Future-In-Past</option>
-		</select>
-		<select id="selection-aspect" class="hidden">
-			<option value="perfect">Perfect</option>
-			<option value="imperfect">Imperfect</option>
-			<option value="passive">Passive</option>
-			<option value="active">Active</option>
-		</select>
-		<select id="selection-mood" class="hidden">
-			<option value="indicative">Indicative</option>
-			<option value="subjunctive">Subjunctive</option>
-			<option value="conditional">Conditional</option>
-			<option value="opative">Opative</option>
-			<option value="imperative">Imperative</option>
-			<option value="hypothetical">Hypothetical</option>
-			<option value="potential">Potential</option>
-			<option value="superpotential">Superpotential</option>
-			<option value="subpotential">Subpotential</option>
-		</select>
-		<br />
-		<button id="jump_button" class="hidden" onClick="jump()">Jump to area</button>
 		<br />
 		
 	</body>
