@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Modern Latin - Nouns</title>
+		<link rel="stylesheet" href="../css/main.css">
+	</head>
+	<body>
+		<script src="../js/essemaker.js"></script>
+		<h2>Nouns</h2>
+		<p>Noun Generator</p>
+		<div id="master-selection">
+			<div id="noun_base">
+				<label for="main-root-selection">Main Root:</label>
+				<input name="main-root-selection" id="main-box"></input>
+				<br />
+				<label for="3rd-person-selection" class="hidden" id="special-label">1st-Person Nominative Name:</label>
+				<input name="3rd-person-selection" id="special-box" class="hidden"></input>
+				<br />
+				<select id="selection-conjugation" onchange="refreshNouns()">
+					<option value=1>1st</option>
+					<option value=2>2nd</option>
+					<option value=3>3rd</option>
+				</select>
+				<br />
+				<button onClick="makeNewVerber()">Process Nouns</button>
+				<br />
+				
+			</div>
+			<div id="participle">
+				<p>Participles (ignore this if you don't know what they are)</p>
+				<select onchange="updateParticiple()" id="selection-tense">
+					<option value="present">Present</option>
+					<option value="past">Past</option>
+					<option value="future">Future</option>
+					<option value="future-in-past">Future-In-Past</option>
+				</select>
+				<select onchange="updateParticiple()" id="selection-aspect">
+					<option value="perfect">Perfect</option>
+					<option value="imperfect">Imperfect</option>
+					<option value="passive">Passive</option>
+					<option value="active">Active</option>
+				</select>
+				<br />
+			</div>
+		</div>
+		
+		<!--<script src="../js/essemaker.js"></script>-->
+	</body>
+</html>

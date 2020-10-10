@@ -1,7 +1,55 @@
 {
-	"__NOUN" : null,
+	"__NOUN" : {
+		1 : {
+			"nominative" : ["ena", "enae"],
+			"genitive" : ["ast", "arum"],
+			"dative" : ["tea", "teas"],
+			"pointerial" : ["erea", "erae"],
+			"accusative" : ["enam", "enas"],
+			"ablative" : ["beca", "becae"],
+		},
+		2 : {
+			"nominative" : ["enus", "eni"],
+			"genitive" : ["ust", "urum"],
+			"dative" : ["teu", "teos"],
+			"pointerial" : ["eru", "erucis"],
+			"accusative" : ["enum", "enos"],
+			"ablative" : ["beu", "benue"]
+		},
+		3 : {
+			"nominative" : ["", "enes"],
+			"genitive" : ["est", "erem"],
+			"dative" : ["tee", "tenis"],
+			"pointerial" : ["ten", "tens"],
+			"accusative" : ["enem", "enen"],
+			"ablative" : ["bece", "becus"],
+		}
+	},
 	"__NOUN_PARTICIPLES" : {
-		
+		"present" : {
+			"perfect" : "",
+			"imperfect" : "er",
+			"active" : "ab",
+			"passive" : "or"
+		},
+		"past" : {
+			"perfect" : "an",
+			"imperfect" : "en",
+			"active" : "eb",
+			"passive" : "on"
+		},
+		"future" : {
+			"perfect" : "isan",
+			"imperfect" : "esan",
+			"active" : "ib",
+			"passive" : "osan"
+		},
+		"future-in-past" : {
+			"perfect" : "isin",
+			"imperfect" : "ensin",
+			"active" : "ibins",
+			"passive" : "osins"
+		}
 	},
 	"__VERB" : {
 		"__comment" : "use id for the mood required",
@@ -64,6 +112,15 @@
 		"infinitive" : "re",
 		"question" : ["ne"]
 	},
+	"__ABLATIVES" : {
+		"agential" : "hecer",
+		"comparative" : "locri",
+		"casual" : "buca",
+		"meanial" : "vios",
+		"manneral" : "ponconi",
+		"circumstantial" : "cerci",
+		"catagorial" : "erini"
+	},
 	"__VERB_TENSES" : {
 		"present" : {
 			"perfect" : ["", false],
@@ -121,5 +178,43 @@
 			"active" : "paro",
 			"passive" : "pere"
 		}
+	},
+	"__PRONOUNS" : {
+		1 : {"nominative" : ["ego", "nos", "los"],
+			"genitive" : ["mei", "nostri", "lostri"],
+			"dative" : ["mihi", "nobis", "lobis"],
+			"pointerial" : ["misi", "nosis", "losis"],
+			"accusative" : ["me", "ne", "le"],
+			"ablative" : ["mine", "nocis", "locis"],
+		},
+		2 : {
+			"nominative" : ["tu", "vos"],
+			"genitive" : ["tui", "vestri"],
+			"dative" : ["tibi", "vobis"],
+			"pointerial" : ["tisi", "vosis"],
+			"accusative" : ["te", "vois"],
+			"ablative" : ["tine", "vocis"]
+		},
+		3 : {"nominative" : ["bu", "bos"],
+			"genitive" : ["bui", "bostri"],
+			"dative" : ["bihi", "bobis"],
+			"pointerial" : ["bisi", "bosis"],
+			"accusative" : ["be", "bois"],
+			"ablative" : ["bine", "bocina"]
+		},
+		4 : {
+			"nominative" : ["ci", "cos"],
+			"genitive" : ["cui", "costri"],
+			"dative" : ["cihi", "cobis"],
+			"pointerial" : ["cisi", "cosis"],
+			"accusative" : ["ce", "cois"],
+			"ablative" : ["cine", "cocina"]
+		}
+	},
+	"__PRONOUNS_GENITIVE" : {
+		1 : ["menus", "nostenus", "lostenus"],
+		2 : ["tenus, nostrenus"],
+		3 : ["bienus", "boenus"],
+		4 : ["cenus", "coenus"]
 	}
 }

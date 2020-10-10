@@ -10,6 +10,9 @@ table, th, td {
 #selection_stuff, #jump {
 	display: inline-block;
 }
+#noun_base, #participle {
+	display: inline-block;
+}
 .selected {
 	animation-name: getYourAttentionAnimation;
 	animation-duration: 1s;
