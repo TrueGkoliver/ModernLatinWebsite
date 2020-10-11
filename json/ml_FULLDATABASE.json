@@ -185,7 +185,7 @@
 			"dative" : ["mihi", "nobis", "lobis"],
 			"pointerial" : ["misi", "nosis", "losis"],
 			"accusative" : ["me", "ne", "le"],
-			"ablative" : ["mine", "nocis", "locis"],
+			"ablative" : ["mine", "nocis", "locis"]
 		},
 		2 : {
 			"nominative" : ["tu", "vos"],
@@ -212,9 +212,9 @@
 		}
 	},
 	"__PRONOUNS_GENITIVE" : {
-		1 : ["menus", "nostenus", "lostenus"],
-		2 : ["tenus, nostrenus"],
-		3 : ["bienus", "boenus"],
-		4 : ["cenus", "coenus"]
+		1 : ["men", "nost", "lost"],
+		2 : ["ten", "nostr"],
+		3 : ["bi", "bo"],
+		4 : ["c", "co"]
 	}
 }

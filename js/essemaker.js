@@ -1,12 +1,13 @@
 
 
-var database = { "__NOUN" : { 1 : { "nominative" : ["ena", "enae"], "genitive" : ["ast", "arum"], "dative" : ["tea", "teas"], "pointerial" : ["erea", "erae"], "accusative" : ["enam", "enas"], "ablative" : ["beca", "becae"], }, 2 : { "nominative" : ["enus", "eni"], "genitive" : ["ust", "urum"], "dative" : ["teu", "teos"], "pointerial" : ["eru", "erucis"], "accusative" : ["enum", "enos"], "ablative" : ["beu", "benue"] }, 3 : { "nominative" : ["", "enes"], "genitive" : ["est", "erem"], "dative" : ["tee", "tenis"], "pointerial" : ["ten", "tens"], "accusative" : ["enem", "enen"], "ablative" : ["bece", "becus"], } }, "__NOUN_PARTICIPLES" : { "present" : { "perfect" : "", "imperfect" : "er", "active" : "ab", "passive" : "or" }, "past" : { "perfect" : "an", "imperfect" : "en", "active" : "eb", "passive" : "on" }, "future" : { "perfect" : "isan", "imperfect" : "esan", "active" : "ib", "passive" : "osan" }, "future-in-past" : { "perfect" : "isin", "imperfect" : "ensin", "active" : "ibins", "passive" : "osins" } }, "__VERB" : { "__comment" : "use id for the mood required", "indicative" : { 1 : ["m", "mus", "sis"], 2 : ["s", "tis"], 3 : ["t", "nt"], 4 : ["nare", "qere"] }, "subjuntive" : { 1 : ["num", "numus", "nusseis"], 2 : ["nus", "nutis"], 3 : ["nut", "nunt"], 4 : ["nequr", "nequres"] }, "conditional" : { 1 : ["rem", "remus", "resseis"], 2 : ["res", "retis"], 3 : ["ret", "rent"], 4 : ["reqir", "reqiris"] }, "opative" : { 1 : ["jem", "jemus", "jessis"], 2 : ["jes", "jetis"], 3 : ["jet", "jent"], 4 : ["jequr", "jerqers"] }, "imperative" : { 1 : ["eom", "eomus", "eoessis"], 2 : ["e", "ete"], 3 : ["etut", "etont"], 4 : ["eipi", "eipis"] }, "hypothetical" : { 1 : ["cem", "cemus", "cessis"], 2 : ["ces", "cetis"], 3 : ["cet", "cent"], 4 : ["cequ", "ceques"] }, "potential" : { 1 : ["qom", "qomus", "qessis"], 2 : ["qos", "qotis"], 3 : ["qot", "qont"], 4 : ["ququ", "ququs"] }, "superpotential" : { 1 : ["qoum", "qoumus", "qossis"], 2 : ["qous", "qoutis"], 3 : ["qout", "qount"], 4 : ["qour", "quorete"] }, "subpotential" : { 1 : ["qem", "qemus", "qeussis"], 2 : ["qes", "qetis"], 3 : ["qet", "qent"], 4 : ["qeur", "qeurete"] } }, "__VERB_GENERICS" : { "infinitive" : "re", "question" : ["ne"] }, "__ABLATIVES" : { "agential" : "hecer", "comparative" : "locri", "casual" : "buca", "meanial" : "vios", "manneral" : "ponconi", "circumstantial" : "cerci", "catagorial" : "erini" }, "__VERB_TENSES" : { "present" : { "perfect" : ["", false], "imperfect" : ["bu", false], "active" : ["qi", false], "passive" : ["to", false] }, "past" : { "perfect" : ["i", true], "imperfect" : ["ba", false], "active" : ["qa", false], "passive" : ["ta", false] }, "future" : { "perfect" : ["pi", false], "imperfect" : ["ici", false], "active" : ["qusi", false], "passive" : ["mi", false] }, "future-in-past" : { "perfect" : ["no", false], "imperfect" : ["imi", true], "active" : ["iti", true], "passive" : ["ja", false] } }, "__TO_BE" : { "infinitive" : "essere", "present" : { "perfect" : { 1 : ["sum", "sumus", "essis"], 2 : ["es", "estis"], 3 : ["est", "sunt"], 4 : ["Inare", "Iuqere"] }, "imperfect" : "suru", "active" : "siru", "passive" : "sumu" }, "past" : { "perfect" : "fuie", "imperfect" : "era", "active" : "fi", "passive" : "fa" }, "future" : { "perfect" : "eri", "imperfect" : "ero", "active" : "aro", "passive" : "erase" }, "future-in-past" : { "perfect" : "pi", "imperfect" : "pero", "active" : "paro", "passive" : "pere" } }, "__PRONOUNS" : { 1 : {"nominative" : ["ego", "nos", "los"], "genitive" : ["mei", "nostri", "lostri"], "dative" : ["mihi", "nobis", "lobis"], "pointerial" : ["misi", "nosis", "losis"], "accusative" : ["me", "ne", "le"], "ablative" : ["mine", "nocis", "locis"], }, 2 : { "nominative" : ["tu", "vos"], "genitive" : ["tui", "vestri"], "dative" : ["tibi", "vobis"], "pointerial" : ["tisi", "vosis"], "accusative" : ["te", "vois"], "ablative" : ["tine", "vocis"] }, 3 : {"nominative" : ["bu", "bos"], "genitive" : ["bui", "bostri"], "dative" : ["bihi", "bobis"], "pointerial" : ["bisi", "bosis"], "accusative" : ["be", "bois"], "ablative" : ["bine", "bocina"] }, 4 : { "nominative" : ["ci", "cos"], "genitive" : ["cui", "costri"], "dative" : ["cihi", "cobis"], "pointerial" : ["cisi", "cosis"], "accusative" : ["ce", "cois"], "ablative" : ["cine", "cocina"] } }, "__PRONOUNS_GENITIVE" : { 1 : ["menus", "nostenus", "lostenus"], 2 : ["tenus, nostrenus"], 3 : ["bienus", "boenus"], 4 : ["cenus", "coenus"] } };
+var database = { "__NOUN" : { 1 : { "nominative" : ["ena", "enae"], "genitive" : ["ast", "arum"], "dative" : ["tea", "teas"], "pointerial" : ["erea", "erae"], "accusative" : ["enam", "enas"], "ablative" : ["beca", "becae"], }, 2 : { "nominative" : ["enus", "eni"], "genitive" : ["ust", "urum"], "dative" : ["teu", "teos"], "pointerial" : ["eru", "erucis"], "accusative" : ["enum", "enos"], "ablative" : ["beu", "benue"] }, 3 : { "nominative" : ["", "enes"], "genitive" : ["est", "erem"], "dative" : ["tee", "tenis"], "pointerial" : ["ten", "tens"], "accusative" : ["enem", "enen"], "ablative" : ["bece", "becus"], } }, "__NOUN_PARTICIPLES" : { "present" : { "perfect" : "", "imperfect" : "er", "active" : "ab", "passive" : "or" }, "past" : { "perfect" : "an", "imperfect" : "en", "active" : "eb", "passive" : "on" }, "future" : { "perfect" : "isan", "imperfect" : "esan", "active" : "ib", "passive" : "osan" }, "future-in-past" : { "perfect" : "isin", "imperfect" : "ensin", "active" : "ibins", "passive" : "osins" } }, "__VERB" : { "__comment" : "use id for the mood required", "indicative" : { 1 : ["m", "mus", "sis"], 2 : ["s", "tis"], 3 : ["t", "nt"], 4 : ["nare", "qere"] }, "subjuntive" : { 1 : ["num", "numus", "nusseis"], 2 : ["nus", "nutis"], 3 : ["nut", "nunt"], 4 : ["nequr", "nequres"] }, "conditional" : { 1 : ["rem", "remus", "resseis"], 2 : ["res", "retis"], 3 : ["ret", "rent"], 4 : ["reqir", "reqiris"] }, "opative" : { 1 : ["jem", "jemus", "jessis"], 2 : ["jes", "jetis"], 3 : ["jet", "jent"], 4 : ["jequr", "jerqers"] }, "imperative" : { 1 : ["eom", "eomus", "eoessis"], 2 : ["e", "ete"], 3 : ["etut", "etont"], 4 : ["eipi", "eipis"] }, "hypothetical" : { 1 : ["cem", "cemus", "cessis"], 2 : ["ces", "cetis"], 3 : ["cet", "cent"], 4 : ["cequ", "ceques"] }, "potential" : { 1 : ["qom", "qomus", "qessis"], 2 : ["qos", "qotis"], 3 : ["qot", "qont"], 4 : ["ququ", "ququs"] }, "superpotential" : { 1 : ["qoum", "qoumus", "qossis"], 2 : ["qous", "qoutis"], 3 : ["qout", "qount"], 4 : ["qour", "quorete"] }, "subpotential" : { 1 : ["qem", "qemus", "qeussis"], 2 : ["qes", "qetis"], 3 : ["qet", "qent"], 4 : ["qeur", "qeurete"] } }, "__VERB_GENERICS" : { "infinitive" : "re", "question" : ["ne"] }, "__ABLATIVES" : { "agential" : "hecer", "comparative" : "locri", "casual" : "buca", "meanial" : "vios", "manneral" : "ponconi", "circumstantial" : "cerci", "catagorial" : "erini" }, "__VERB_TENSES" : { "present" : { "perfect" : ["", false], "imperfect" : ["bu", false], "active" : ["qi", false], "passive" : ["to", false] }, "past" : { "perfect" : ["i", true], "imperfect" : ["ba", false], "active" : ["qa", false], "passive" : ["ta", false] }, "future" : { "perfect" : ["pi", false], "imperfect" : ["ici", false], "active" : ["qusi", false], "passive" : ["mi", false] }, "future-in-past" : { "perfect" : ["no", false], "imperfect" : ["imi", true], "active" : ["iti", true], "passive" : ["ja", false] } }, "__TO_BE" : { "infinitive" : "essere", "present" : { "perfect" : { 1 : ["sum", "sumus", "essis"], 2 : ["es", "estis"], 3 : ["est", "sunt"], 4 : ["Inare", "Iuqere"] }, "imperfect" : "suru", "active" : "siru", "passive" : "sumu" }, "past" : { "perfect" : "fuie", "imperfect" : "era", "active" : "fi", "passive" : "fa" }, "future" : { "perfect" : "eri", "imperfect" : "ero", "active" : "aro", "passive" : "erase" }, "future-in-past" : { "perfect" : "pi", "imperfect" : "pero", "active" : "paro", "passive" : "pere" } }, "__PRONOUNS" : { 1 : {"nominative" : ["ego", "nos", "los"], "genitive" : ["mei", "nostri", "lostri"], "dative" : ["mihi", "nobis", "lobis"], "pointerial" : ["misi", "nosis", "losis"], "accusative" : ["me", "ne", "le"], "ablative" : ["mine", "nocis", "locis"] }, 2 : { "nominative" : ["tu", "vos"], "genitive" : ["tui", "vestri"], "dative" : ["tibi", "vobis"], "pointerial" : ["tisi", "vosis"], "accusative" : ["te", "vois"], "ablative" : ["tine", "vocis"] }, 3 : {"nominative" : ["bu", "bos"], "genitive" : ["bui", "bostri"], "dative" : ["bihi", "bobis"], "pointerial" : ["bisi", "bosis"], "accusative" : ["be", "bois"], "ablative" : ["bine", "bocina"] }, 4 : { "nominative" : ["ci", "cos"], "genitive" : ["cui", "costri"], "dative" : ["cihi", "cobis"], "pointerial" : ["cisi", "cosis"], "accusative" : ["ce", "cois"], "ablative" : ["cine", "cocina"] } }, "__PRONOUNS_GENITIVE" : { 1 : ["men", "nost", "lost"], 2 : ["ten", "nostr"], 3 : ["bi", "bo"], 4 : ["c", "co"] } };
 var verbs = database["__VERB"];
 var toBe = database["__TO_BE"];
 var verbTenses = database["__VERB_TENSES"];
 var noun = database["__NOUN"];
 var participle = database["__NOUN_PARTICIPLES"];
 var pronouns = database["__PRONOUNS"];
+var pronouns_genitive = database["__PRONOUNS_GENITIVE"];
 function titleCase(str) {
 	str = str.toLowerCase();
 	str = str.split(' ');
@@ -409,6 +410,198 @@ function refreshNouns() {
 		conjugation3rdButton.className = "hidden";
 		conjugation3rdLabel.className = "hidden";
 	}
+	
+	
+}
+function createPronounList(person) {
+	clearTables();
+	var tbr = document.createElement("table");
+	tbr.className = "verb_table";
+	let thead = tbr.createTHead();
+	let personh = document.createElement("th");
+	let si = document.createElement("th");
+	let p = document.createElement("th");
+	let pe;
+	if (person==1) { pe = document.createElement("th"); }
+	personh.innerHTML = "Case";
+	si.innerHTML = "Singular";
+	p.innerHTML = "Plural";
+	if (person==1) {pe.innerHTML = "Plural (Exclusive)"}
+	thead.appendChild(personh);
+	thead.appendChild(si);
+	thead.appendChild(p);
+	if (person==1) { thead.appendChild(pe); }
+	var whatever = [
+		tbr.insertRow(0), //Nominative
+		tbr.insertRow(1), //Genitive
+		tbr.insertRow(2), //Dative
+		tbr.insertRow(3), //Pointerial
+		tbr.insertRow(4), //Accusative
+		tbr.insertRow(5) //Ablative
+	]
+	var nominative = whatever[0].insertCell(0);
+	var genitive = whatever[1].insertCell(0);
+	var dative = whatever[2].insertCell(0);
+	var pointerial = whatever[3].insertCell(0);
+	var accusative = whatever[4].insertCell(0);
+	var ablative = whatever[5].insertCell(0);
+	nominative.innerHTML="<b>Nominative</b>";
+	genitive.innerHTML="<b>Genitive</b>";
+	dative.innerHTML="<b>Dative</b>";
+	pointerial.innerHTML="<b>Pointerial</b>";
+	accusative.innerHTML="<b>Accusative</b>";
+	ablative.innerHTML="<b>Ablative</b>";
+	for (var a=0; a<cases.length; a++) {
+		caseIn = cases[a];
+		var array;
+		if (person==1) {
+			array = plural_1stperson
+		} else {
+			array = plural;
+		}
+		for (var b=0; b<array.length; b++) {
+			pluralIn = array[b];
+
+			var cell = whatever[a].insertCell(b+1);
+			//function getTrueRoot(regularBlock, singPlur, plural, caseIn, conjugation)
+			//var trueRoot = getTrueRoot(regularBlock, specialBlock, pluralIn, caseIn, conjugation);
+			//console.log(trueRoot);
+			//function makeNoun(trueroot, tense, aspect, plural, caseIn, conjugation)
+			var pronounIn = pronouns[person][caseIn][pluralIn-1];
+			cell.innerHTML = pronounIn;
+			//cell.innerHTML = makeNoun(trueRoot, tense, aspect, pluralIn, caseIn, conjugation);
+		}
+	}
+	tbr.className = "verb_table";
+	document.body.appendChild(tbr);
+	
+}
+function quidEst(person, plurality) {
+	//clearTables();
+	var tbr = document.createElement("table");
+	tbr.className = "verb_table";
+	let thead = tbr.createTHead();
+	let personh = document.createElement("th");
+	let si = document.createElement("th");
+	let p = document.createElement("th");
+	let pe;
+	if (person==1) { pe = document.createElement("th"); }
+	personh.innerHTML = "Case";
+	si.innerHTML = "Singular";
+	p.innerHTML = "Plural";
+	if (person==1) {pe.innerHTML = "Plural (Exclusive)"}
+	thead.appendChild(personh);
+	thead.appendChild(si);
+	thead.appendChild(p);
+	if (person==1) { thead.appendChild(pe); }
+	var whatever = [
+		tbr.insertRow(0), //Nominative
+		tbr.insertRow(1), //Genitive
+		tbr.insertRow(2), //Dative
+		tbr.insertRow(3), //Pointerial
+		tbr.insertRow(4), //Accusative
+		tbr.insertRow(5) //Ablative
+	]
+	var nominative = whatever[0].insertCell(0);
+	var genitive = whatever[1].insertCell(0);
+	var dative = whatever[2].insertCell(0);
+	var pointerial = whatever[3].insertCell(0);
+	var accusative = whatever[4].insertCell(0);
+	var ablative = whatever[5].insertCell(0);
+	for (var a=0; a<cases.length; a++) {
+		caseIn = cases[a];
+		var array;
+		if (person==1) {
+			array = plural_1stperson
+		} else {
+			array = plural;
+		}
+		for (var b=0; b<array.length; b++) {
+			pluralIn = array[b];
+			var cell = whatever[a].insertCell(b+1);
+			//function getTrueRoot(regularBlock, singPlur, plural, caseIn, conjugation)
+			//var trueRoot = getTrueRoot(regularBlock, specialBlock, pluralIn, caseIn, conjugation);
+			//console.log(trueRoot);
+			//function makeNoun(trueroot, tense, aspect, plural, caseIn, conjugation)
+			var pronounIn = pronouns[person][caseIn][pluralIn-1];
+			cell.innerHTML = pronounIn;
+			//cell.innerHTML = makeNoun(trueRoot, tense, aspect, pluralIn, caseIn, conjugation);
+		}
+	}
+	tbr.className = "verb_table";
+	document.body.appendChild(tbr);
+	
+}
+function createPronounGenitiveList(person, plurality) {
+	//clearTables();
+	var tbr = document.createElement("table");
+	tbr.className = "verb_table";
+	let thead = tbr.createTHead();
+	let personh = document.createElement("th");
+	let si = document.createElement("th");
+	let p = document.createElement("th");
+	let pe;
+	if (person==1) { pe = document.createElement("th"); }
+	personh.innerHTML = "Case";
+	si.innerHTML = "Singular";
+	p.innerHTML = "Plural";
+	if (person==1) {pe.innerHTML = "Plural (Exclusive)"}
+	thead.appendChild(personh);
+	thead.appendChild(si);
+	thead.appendChild(p);
+	if (person==1) { thead.appendChild(pe); }
+	var whatever = [
+		tbr.insertRow(0), //Nominative
+		tbr.insertRow(1), //Genitive
+		tbr.insertRow(2), //Dative
+		tbr.insertRow(3), //Pointerial
+		tbr.insertRow(4), //Accusative
+		tbr.insertRow(5) //Ablative
+	]
+	var nominative = whatever[0].insertCell(0);
+	var genitive = whatever[1].insertCell(0);
+	var dative = whatever[2].insertCell(0);
+	var pointerial = whatever[3].insertCell(0);
+	var accusative = whatever[4].insertCell(0);
+	var ablative = whatever[5].insertCell(0);
+	nominative.innerHTML="<b>Nominative</b>";
+	genitive.innerHTML="<b>Genitive</b>";
+	dative.innerHTML="<b>Dative</b>";
+	pointerial.innerHTML="<b>Pointerial</b>";
+	accusative.innerHTML="<b>Accusative</b>";
+	ablative.innerHTML="<b>Ablative</b>";
+	for (var a=0; a<cases.length; a++) {
+		caseIn = cases[a];
+		var array;
+		if (person==1) {
+			array = plural_1stperson
+		} else {
+			array = plural;
+		}
+		for (var b=0; b<array.length; b++) {
+			pluralIn = array[b];
+			var cell = whatever[a].insertCell(b+1);
+			//function getTrueRoot(regularBlock, singPlur, plural, caseIn, conjugation)
+			//var trueRoot = getTrueRoot(regularBlock, specialBlock, pluralIn, caseIn, conjugation);
+			//console.log(trueRoot);
+			//function makeNoun(trueroot, tense, aspect, plural, caseIn, conjugation)
+			var pronounIn = pronouns_genitive[person][pluralIn-1];
+			pronounIn+=noun[2][caseIn][plurality];
+			cell.innerHTML = pronounIn;
+			//cell.innerHTML = makeNoun(trueRoot, tense, aspect, pluralIn, caseIn, conjugation);
+		}
+	}
+	tbr.className = "verb_table";
+	document.body.appendChild(tbr);
+	
+}
+function makeTruePronoun() {
+	var personSelection = document.getElementById("person-selection");
+	
+	var person = personSelection.options[personSelection.selectedIndex].value;
+	createPronounList(person);
+	createPronounGenitiveList(person, 0);
+	createPronounGenitiveList(person, 1);
 }
 var count = 0;
 function startWork() {
