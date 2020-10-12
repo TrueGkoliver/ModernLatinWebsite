@@ -150,7 +150,7 @@ function createEsse(tense, aspect, voice) {
 		else {
 			for (e = 0; e < plural.length; e++) {
 				var pluralIn = plural[e];
-				var cell = whatever[d].insertCell(e);
+				var cell = whatever[d].insertCell(e+1);
 				cell.innerHTML = createIndividualEsse(tense, aspect, voice, person, pluralIn);
 				//document.write(createEsse(tense, aspect, mood, person, pluralIn));
 				count++;
