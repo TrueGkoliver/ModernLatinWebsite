@@ -597,10 +597,22 @@ function createPronounGenitiveList(person, plurality) {
 }
 function makeTruePronoun() {
 	var personSelection = document.getElementById("person-selection");
+	var b_base = document.createElement("b");
+	var b_possessive_singular = document.createElement("b");
+	var b_possessive_plural = document.createElement("b");
+	b_base.className = "verb_table";
+	b_possessive_plural.className = "verb_table";
+	b_possessive_singular.className = "verb_table";
 	
+	b_base.innerHTML = "Base terms";
+	b_possessive_singular.innerHTML = "Singular Possessive Adjectives";
+	b_possessive_plural.innerHTML = "Plural Possessive Adjectives";
 	var person = personSelection.options[personSelection.selectedIndex].value;
+	document.body.appendChild(b_base);
 	createPronounList(person);
+	document.body.appendChild(b_possessive_singular);
 	createPronounGenitiveList(person, 0);
+	document.body.appendChild(b_possessive_plural);
 	createPronounGenitiveList(person, 1);
 }
 var count = 0;

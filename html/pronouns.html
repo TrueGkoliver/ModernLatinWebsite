@@ -7,7 +7,7 @@
 	<body>
 		<script src="../js/essemaker.js"></script>
 		<h2>Pronoun Maker!</h2>
-		<select name="person-selector" id="person-selection" onchange="">
+		<select name="person-selector" id="person-selection" onchange="makeTruePronoun()">
 			<option value=1>1st</option>
 			<option value=2>2nd</option>
 			<option value=3>3rd</option>
@@ -15,6 +15,9 @@
 		</select>
 		<label for="person-selector">Person</label>
 		</br>
-		<button onClick="makeTruePronoun()">Make Pronouns</button>
+		<script>
+			makeTruePronoun();
+		</script>
+		<!--<button onClick="makeTruePronoun()">Make Pronouns</button>-->
 	</body>
 </html>
