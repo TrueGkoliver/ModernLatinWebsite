@@ -610,8 +610,10 @@ function makeTruePronoun() {
 	var person = personSelection.options[personSelection.selectedIndex].value;
 	document.body.appendChild(b_base);
 	createPronounList(person);
+	document.body.appendChild(document.createElement("br"));
 	document.body.appendChild(b_possessive_singular);
 	createPronounGenitiveList(person, 0);
+	document.body.appendChild(document.createElement("br"));
 	document.body.appendChild(b_possessive_plural);
 	createPronounGenitiveList(person, 1);
 }
