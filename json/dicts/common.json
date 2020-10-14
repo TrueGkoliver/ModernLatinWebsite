@@ -20,6 +20,13 @@
 			"common-type" : "VERB",
 			"definition-verb" : "To be able to do something.",
 			"definition-noun" : "An ability."
+		},
+		{
+			"parts" : ["ambula", "ambulav"],
+			"declinsion" : 2,
+			"common-type" : "VERB",
+			"definition-verb" : "To walk.",
+			"definition-noun" : "A walk."
 		}
 	],
 	"amplifiers-adjectives" : [
@@ -81,7 +88,8 @@
 			"amt" : "-1"
 		},
 		{
-			"name" : ""
+			"name" : "nuli",
+			"amt" : "0"
 		}
 	],
 	"prefixes" : [
