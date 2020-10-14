@@ -1,0 +1,11 @@
+{
+	"dict" : [
+		{
+			"parts" : ["volo", "volix"],
+			"declinsion" : 2,
+			"common-type" : "VERB",
+			"definition-verb" : "To want or desire.",
+			"definition-noun" : "A want or desire."
+		}
+	]
+}
