@@ -1,11 +1,97 @@
 {
-	"dict" : [
+	"nouns_and_verbs" : [
 		{
 			"parts" : ["volo", "volix"],
 			"declinsion" : 2,
 			"common-type" : "VERB",
 			"definition-verb" : "To want or desire.",
 			"definition-noun" : "A want or desire."
+		},
+		{
+			"parts" : ["nolo", "nolix"],
+			"declinsion" : 2,
+			"common-type" : "VERB",
+			"definition-verb" : "To not want or desire.",
+			"definition-noun" : "A lack of a want or desire."
+		},
+		{
+			"parts" : ["possu", "possuv"],
+			"declinsion" : 2,
+			"common-type" : "VERB",
+			"definition-verb" : "To be able to do something.",
+			"definition-noun" : "An ability."
+		}
+	],
+	"amplifiers-adjectives" : [
+		{
+			"name" : "issim",
+			"meaning" : "Very"
+		},
+		{
+			"name" : "ou",
+			"meaning" : "More"
+		},
+		{
+			"name" : "ri",
+			"meaning" : "Most"
+		},
+		{
+			"name" : "ui",
+			"meaning" : "Less"
+		},
+		{
+			"name" : "ocimi",
+			"meaning" : "Least"
+		},
+		{
+			"name" : "ima",
+			"meaning" : "Not"
+		},
+		{
+			"name" : "no",
+			"meaning" : "Not"
+		},
+		
+		{
+			"name" : "assim",
+			"meaning" : "Anti-Very (\"Very not\")"
+		},
+		{
+			"name" : "ama",
+			"meaning" : "Anti-More (\"More not\")"
+		},
+		{
+			"name" : "iar",
+			"meaning" : "Anti-Most (\"Most not\")"
+		}
+		{
+			"name" : "ai",
+			"meaning" : "Less (\"Less not\")"
+		},
+		{
+			"name" : "au",
+			"meaning" : "Least (\"Least not\")"
+		},
+		
+		
+	]
+	"amplifiers" : [
+		{
+			"name" : "anti",
+			"amt" : "-1"
+		},
+		{
+			"name" : ""
+		}
+	],
+	"prefixes" : [
+		{
+			"name" : "meso",
+			"definition" : "The middle of something"
+		},
+		{
+			"name" : "circum",
+			"definition" : "Around"
 		}
 	]
 }
