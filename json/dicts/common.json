@@ -27,6 +27,36 @@
 			"common-type" : "VERB",
 			"definition-verb" : "To walk.",
 			"definition-noun" : "A walk."
+		},
+		{
+			"parts" : ["homo", "homin", "hominix"],
+			"declinsion" : 3,
+			"common-type" : "NOUN",
+			"definition-noun" : "A human."
+		},
+		{
+			"parts" : ["vi", "vip"],
+			"declinsion" : 1,
+			"common-type" : "NOUN",
+			"definition-noun" : "A road."
+		},
+		{
+			"parts" : ["dic", "dix"],
+			"declinsion" : 1,
+			"common-type" : "VERB",
+			"definition-verb" : "To create, to make."
+		},
+		{
+			"parts" : ["vill", "villix"],
+			"declinsion" : 1,
+			"common-type" : "NOUN",
+			"definition-noun" : "A house or home."
+		},
+		{
+			"parts" : ["habita", "habitav"],
+			"declinsion" : 2,
+			"common-type" : "VERB",
+			"definition-verb" : "To inhabit something or live in something."
 		}
 	],
 	"amplifiers-adjectives" : [
@@ -90,6 +120,10 @@
 		{
 			"name" : "nuli",
 			"amt" : "0"
+		},
+		{
+			"name" : "infini",
+			"amt" : "infinity"
 		}
 	],
 	"prefixes" : [
@@ -100,6 +134,14 @@
 		{
 			"name" : "circum",
 			"definition" : "Around"
+		},
+		{
+			"name" : "eracusi",
+			"defintition" : "Difficult, or the action is hard"
+		},
+		{
+			"name" : "",
+			"definition" : ""
 		}
 	]
 }
