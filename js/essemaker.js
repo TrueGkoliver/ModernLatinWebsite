@@ -167,7 +167,9 @@ function createIndividualWord(tense, aspect, voice, person, number, infinitive, 
 		tbr+=infinitive;
 	}
 	if (voice=="imperative") {
-		lastletter = voice.slice(-1);
+		lastletter = tbr.slice(-1);
+		console.log(tbr);
+		console.log(lastletter);
 		if (lastletter=="e") {
 			tbr=tbr.slice(0,-1);
 		}

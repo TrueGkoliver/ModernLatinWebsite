@@ -57,6 +57,12 @@
 			"declension" : 2,
 			"common-type" : "VERB",
 			"definition-verb" : "To inhabit something or live in something."
+		},
+		{
+			"parts" : ["sci", "scip"],
+			"declinsion" : 1,
+			"common-type" : "VERB",
+			"definition-verb" : "To know"
 		}
 	],
 	"amplifiers-adjectives" : [
