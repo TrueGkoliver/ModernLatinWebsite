@@ -172,7 +172,9 @@
 		{ "name" : "ad", "definition" : "To or towards" },
 		{ "name" : "prope", "definition" : "near" },
 		{ "name" : "apud", "definition" : "among" },
-		{ "name" : "dicir", "definition" : "far, far away from" }
+		{ "name" : "dicir", "definition" : "far, far away from" },
+		{ "name" : "cum", "definition" : "with" }, 
+		{ "name" : "ex", "definition" : "out of, away from, from" }
 	]
 	"prefixes" : [
 		{
@@ -190,6 +192,14 @@
 		{
 			"name" : "re",
 			"definition" : "Again, or to do again"
+		},
+		{
+			"name" : "trans",
+			"definition" : "Across"
+		},
+		{
+			"name" : "cis",
+			"definition" : "Not across."
 		}
 	],
 	"questions" : {
