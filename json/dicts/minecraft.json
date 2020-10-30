@@ -1,0 +1,22 @@
+{
+	"nouns_and_verbs" : [
+		{
+			"parts" : ["vit", "vitix"],
+			"declension" : 2,
+			"common-type" : "NOUN",
+			"definition-verb" : "To farm wheat.",
+			"definition-noun" : "Wheat."
+		}
+	],
+	"amplifiers-adjectives" : [
+		
+	],
+	"amplifiers" : [
+		
+	],
+	"prepositions" : [
+		
+	],
+	"prefixes" : [
+	]
+}
