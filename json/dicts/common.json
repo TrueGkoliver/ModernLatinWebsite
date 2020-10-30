@@ -54,15 +54,48 @@
 		},
 		{
 			"parts" : ["habita", "habitav"],
-			"declension" : 2,
-			"common-type" : "VERB",
+			"declension" : 2, "common-type" : "VERB",
 			"definition-verb" : "To inhabit something or live in something."
 		},
 		{
 			"parts" : ["sci", "scip"],
-			"declinsion" : 1,
-			"common-type" : "VERB",
+			"declinsion" : 1, "common-type" : "VERB",
 			"definition-verb" : "To know"
+		},
+		{
+			"parts" : ["canis", "cane", "canep"],
+			"declinsion" : 3, "common-type" : "NOUN",
+			"definition-noun" : "A dog."
+		},
+		{
+			"parts" : ["parv", "parix"],
+			"declinsion" : 2, "common-type" : "NOUN",
+			"definition-noun" : "Small."
+		},
+		{
+			"parts" : ["magn", "magnec"],
+			"declinsion" : 2, "common-type" : "NOUN",
+			"definition-noun" : "Big."
+		},
+		{
+			"parts" : ["pogi", "pogis"],
+			"declinsion" : 1, "common-type" : "VERB",
+			"definition-verb" : "To be pog."
+		},
+		{
+			"parts" : ["poge", "pogex"],
+			"declinsion" : 2, "common-type" : "NOUN",
+			"definition-noun" : "Pog."
+		},
+		{
+			"parts" : ["irat", "iratix"],
+			"declinsion" : 2, "common-type" : "NOUN",
+			"definition-noun" : "Angry."
+		},
+		{
+			"parts" : ["fess", "fessip"],
+			"declinsion" : 2, "common-type" : "NOUN",
+			"definition-noun" : "Tired."
 		}
 	],
 	"amplifiers-adjectives" : [
@@ -132,6 +165,17 @@
 			"amt" : "infinity"
 		}
 	],
+	"prepositions" : [
+		{ "name" : "in", "definition" : "inside or in" },
+		{ "name" : "post", "definition" : "after" },
+		{ "name" : "pre", "definition" : "before" },
+		{ "name" : "ad", "definition" : "To or towards" },
+		{ "name" : "prope", "definition" : "near" },
+		{ "name" : "apud", "definition" : "among" },
+		{ "name" : "dicir", "definition" : "far, far away from" },
+		{ "name" : "cum", "definition" : "with" }, 
+		{ "name" : "ex", "definition" : "out of, away from, from" }
+	]
 	"prefixes" : [
 		{
 			"name" : "meso",
@@ -146,8 +190,33 @@
 			"defintition" : "Difficult, or the action is hard"
 		},
 		{
-			"name" : "",
-			"definition" : ""
+			"name" : "re",
+			"definition" : "Again, or to do again"
+		},
+		{
+			"name" : "trans",
+			"definition" : "Across"
+		},
+		{
+			"name" : "cis",
+			"definition" : "Not across."
 		}
-	]
+	],
+	"questions" : {
+		"qur" : "Why",
+		"quis" : "Who",
+		"quid" : "What",
+		"quiem" : "How",
+		"qemis" : "Which",
+		"quantus" : "How big",
+		"quot" : "How many",
+		"qualis" : "What kind of",
+		"quam" : "When",
+		"quisis" : "Where",
+		"quo" : "Where to",
+		"qua" : "By which way/route",
+		"qui" : "Which",
+		"quanto" : "By how much/for so much",
+		"quotiens" : "How often"
+	}
 }
