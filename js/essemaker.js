@@ -258,6 +258,14 @@ function clearTables() {
 	for (var i = 0; i<tables.length; i++) {
 		tables[i].remove();
 	}
+	const div_individual = document.querySelectorAll(".single_verb_class");
+	for (var i = 0; i<div_individual.length; i++) {
+		div_individual[i].remove();
+	}
+	const div_collective = document.querySelectorAll(".collective_div");
+	for (var i = 0; i<div_collective.length; i++) {
+		div_collective[i].remove();
+	}
 }
 function clearHidden() {
 	document.getElementById("selection-tense").className = "";
@@ -296,7 +304,7 @@ function processVerbs() {
 	clearHidden();
 	let infinitive = document.getElementById("infinitive-box").value;
 	let perfective = document.getElementById("perfective-box").value;
-	
+	let collectiveDivIn = document.createElement("div");
 	
 	var a;
 	for (a = 0; a < tenses.length; a++) {
@@ -308,16 +316,20 @@ function processVerbs() {
 		  for (c = 0; c < moods.length; c++) {
 			  var bold = document.createElement("b");
 			  bold.className = "verb_table";
+			  let divIn = document.createElement("div");
 			  var mood = moods[c];
 			  bold.id = tense+"-"+aspect+"-"+mood;
 			  bold.innerHTML = titleCase(tense)+", "+titleCase(aspect)+", "+titleCase(mood);
-			  document.body.appendChild(bold);
-			  document.body.appendChild(createVerb(tense, aspect, mood, infinitive, perfective));
-			  
+			  divIn.className = "single_verb_class"
+			  divIn.appendChild(bold);
+			  divIn.appendChild(createVerb(tense, aspect, mood, infinitive, perfective))
+			  //document.body.appendChild(divIn);
+			  collectiveDivIn.appendChild(divIn);
 		  }
 		}
 	}
-	
+	collectiveDivIn.className = "collective_div";
+	document.body.appendChild(collectiveDivIn);
 }
 function processNouns(tense, aspect, conjugation, regularBlock, specialBlock) {
 	var tbr = document.createElement("table");
