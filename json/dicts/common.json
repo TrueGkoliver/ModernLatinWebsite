@@ -175,7 +175,7 @@
 		{ "name" : "dicir", "definition" : "far, far away from" },
 		{ "name" : "cum", "definition" : "with" }, 
 		{ "name" : "ex", "definition" : "out of, away from, from" }
-	]
+	],
 	"prefixes" : [
 		{
 			"name" : "meso",
