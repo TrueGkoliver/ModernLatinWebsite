@@ -1,7 +1,10 @@
 table, th, td {
-	border: 1px solid black;
+	/*border: 1px solid black;
 	background-color: #FFFFFF;
-	color: black;
+	color: black;*/
+    border: 1px solid white;
+    background-color: black;
+    color: white;
 }
 .welcome {
 	background-color: silver;

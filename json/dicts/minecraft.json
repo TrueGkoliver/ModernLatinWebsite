@@ -6,6 +6,12 @@
 			"common-type" : "NOUN",
 			"definition-verb" : "To farm wheat.",
 			"definition-noun" : "Wheat."
+		},
+		{
+			"parts" : ["fininial", "fininiax"],
+			"declension" : 1,
+			"common-type" : "NOUN",
+			"definition-verb" : "The End."
 		}
 	],
 	"amplifiers-adjectives" : [
