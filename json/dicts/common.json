@@ -59,43 +59,47 @@
 		},
 		{
 			"parts" : ["sci", "scip"],
-			"declinsion" : 1, "common-type" : "VERB",
+			"declension" : 1, "common-type" : "VERB",
 			"definition-verb" : "To know"
 		},
 		{
 			"parts" : ["canis", "cane", "canep"],
-			"declinsion" : 3, "common-type" : "NOUN",
+			"declension" : 3, "common-type" : "NOUN",
 			"definition-noun" : "A dog."
 		},
 		{
 			"parts" : ["parv", "parix"],
-			"declinsion" : 2, "common-type" : "NOUN",
+			"declension" : 2, "common-type" : "NOUN",
 			"definition-noun" : "Small."
 		},
 		{
 			"parts" : ["magn", "magnec"],
-			"declinsion" : 2, "common-type" : "NOUN",
+			"declension" : 2, "common-type" : "NOUN",
 			"definition-noun" : "Big."
 		},
 		{
 			"parts" : ["pogi", "pogis"],
-			"declinsion" : 1, "common-type" : "VERB",
+			"declension" : 1, "common-type" : "VERB",
 			"definition-verb" : "To be pog."
 		},
 		{
 			"parts" : ["poge", "pogex"],
-			"declinsion" : 2, "common-type" : "NOUN",
+			"declension" : 2, "common-type" : "NOUN",
 			"definition-noun" : "Pog."
 		},
 		{
 			"parts" : ["irat", "iratix"],
-			"declinsion" : 2, "common-type" : "NOUN",
+			"declension" : 2, "common-type" : "NOUN",
 			"definition-noun" : "Angry."
 		},
 		{
 			"parts" : ["fess", "fessip"],
-			"declinsion" : 2, "common-type" : "NOUN",
+			"declension" : 2, "common-type" : "NOUN",
 			"definition-noun" : "Tired."
+		},
+		{
+			"parts" : ["necesseni", "necessej"],
+			"declension" : ""
 		}
 	],
 	"amplifiers-adjectives" : [
@@ -164,6 +168,12 @@
 			"name" : "infini",
 			"amt" : "infinity"
 		}
+	],
+	"conjunctions" : [
+		{ "name" : "qoud", "definition" : "because"},
+		{ "name" : "sed", "definition" : "but"},
+		{ "name" : "igitur", "definition" : "so"},
+		{ "name" : "pere", "definition" : "that, before a noun clause"},
 	],
 	"prepositions" : [
 		{ "name" : "in", "definition" : "inside or in" },
