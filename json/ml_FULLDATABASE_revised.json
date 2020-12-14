@@ -110,7 +110,10 @@
 	},
 	"__VERB_GENERICS" : {
 		"infinitive" : "re",
-		"question" : ["ne"]
+		"question" : "ne",
+		"result" : "exus",
+		"do-er" : "emper",
+		"do-ee" : "exi"
 	},
 	"__ABLATIVES" : {
 		"agential" : "hecer",

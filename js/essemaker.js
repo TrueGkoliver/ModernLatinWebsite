@@ -168,8 +168,6 @@ function createIndividualWord(tense, aspect, voice, person, number, infinitive, 
 	}
 	if (voice=="imperative") {
 		lastletter = tbr.slice(-1);
-		console.log(tbr);
-		console.log(lastletter);
 		if (lastletter=="e") {
 			tbr=tbr.slice(0,-1);
 		}
@@ -258,6 +256,10 @@ function clearTables() {
 	for (var i = 0; i<tables.length; i++) {
 		tables[i].remove();
 	}
+    const infinitives = document.querySelectorAll(".infinitive_boxes");
+	for (var i = 0; i<infinitives.length; i++) {
+		infinitives[i].remove();
+	}
 	const div_individual = document.querySelectorAll(".single_verb_class");
 	for (var i = 0; i<div_individual.length; i++) {
 		div_individual[i].remove();
@@ -274,6 +276,67 @@ function clearHidden() {
 	document.getElementById("jump_button").className = "";
 	document.getElementById("sentencefor").className = "";
 }
+function generateInfinitiveChart(infinitive, perfective) {
+    var tbr = document.createElement("table");
+    tbr.className = "verb_table";
+    let thead = tbr.createTHead();
+
+    let header = document.createElement("th");
+    let present = document.createElement("th");
+    let past = document.createElement("th");
+    let future = document.createElement("th");
+    let future_in_past = document.createElement("th");
+
+    header.innerHTML = "Infinitives";
+    present.innerHTML = "Present";
+    past.innerHTML = "Past";
+    future.innerHTML = "Future";
+    future_in_past.innerHTML = "Future-in-Past";
+
+    thead.appendChild(header);
+    thead.appendChild(present);
+    thead.appendChild(past);
+    thead.appendChild(future);
+    thead.appendChild(future_in_past);
+    //let th_singular = thead.insertCell(0);
+    //th_singular.innerHTML = "Singular";
+    //let th_plural = thead.insertCell(1);
+    //th_plural.innerHTML = "Plural";
+    //let th_exclusive = thead.insertCell(2);
+    //th_exclusive.innerHTML = "Plural (Exclusive)";
+    var aspects_arr = [
+        tbr.insertRow(0),
+        tbr.insertRow(1),
+        tbr.insertRow(2),
+        tbr.insertRow(3)
+    ]
+    var fPerfect = aspects_arr[0].insertCell(0);
+    var fImperfect = aspects_arr[1].insertCell(0);
+    var fActive = aspects_arr[2].insertCell(0);
+    var fPassive = aspects_arr[3].insertCell(0);
+    fPerfect.innerHTML="<b>Perfect</b>";
+    fImperfect.innerHTML="<b>Imperfect</b>";
+    fActive.innerHTML="<b>Active</b>";
+    fPassive.innerHTML="<b>Passive</b>";
+    for (var a = 0; a < tenses.length; a++) {
+        var tense = tenses[a];
+        for (var b = 0; b < aspects.length; b++) {
+            var aspect = aspects[b];
+            var cell = aspects_arr[b].insertCell(a+1);
+            var inf = "";
+            if (verbTenses[tense][aspect][1]) {
+                inf+=perfective;
+            } else {
+                inf+=infinitive;
+            }
+            inf+=verbTenses[tense][aspect][0]
+            inf+="re";
+            cell.innerHTML = inf;
+        }
+    }
+    tbr.className = "infinitive_boxes";
+    return tbr;
+}
 function jump() {
 	var currentElement = document.getElementsByClassName("selected");
 	if (currentElement[0]!=null) {
@@ -286,12 +349,8 @@ function jump() {
 	var aspect = aspect_getter.options[aspect_getter.selectedIndex].value;
 	var mood = mood_getter.options[mood_getter.selectedIndex].value;
 	
-	console.log(mood);
-	console.log(tense);
-	console.log(aspect);
-	
+
 	const amt = tense+"-"+aspect+"-"+mood;
-	console.log(amt);
 	var elementIn = document.getElementById(amt);
 	
 	if (elementIn!=null) {
@@ -305,7 +364,10 @@ function processVerbs() {
 	let infinitive = document.getElementById("infinitive-box").value;
 	let perfective = document.getElementById("perfective-box").value;
 	let collectiveDivIn = document.createElement("div");
-	
+    var infbold = document.createElement("b");
+    infbold.className = "infinitive_boxes";
+    infbold.innerHTML = "Infinitives";
+	document.body.appendChild(generateInfinitiveChart(infinitive, perfective));
 	var a;
 	for (a = 0; a < tenses.length; a++) {
 		var tense = tenses[a];
@@ -377,7 +439,6 @@ function processNouns(tense, aspect, conjugation, regularBlock, specialBlock) {
 			var cell = whatever[a].insertCell(b+1);
 			//function getTrueRoot(regularBlock, singPlur, plural, caseIn, conjugation)
 			var trueRoot = getTrueRoot(regularBlock, specialBlock, pluralIn, caseIn, conjugation);
-			console.log(trueRoot);
 			//function makeNoun(trueroot, tense, aspect, plural, caseIn, conjugation)
 			cell.innerHTML = makeNoun(trueRoot, tense, aspect, pluralIn, caseIn, conjugation);
 		}
