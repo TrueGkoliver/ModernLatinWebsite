@@ -5,8 +5,34 @@ table, th, td {
     /*border: 1px solid black;*/
     background-color: white;
     color: black;
+    
+}
+table.infinitive_boxes {
+    width: 40%;
+    margin-top: 1%;
+}
+table.verb_table {
+    width: 30%
+}
+    
+th {
+    background-color:darkred;
+    color: white;
+}
+thead th:first-child {
+    background-color:darkseagreen;
+    color:white;
+}
+tr td:first-child {
+    background-color: black;
+    color: white;
+    border: none;
+}
+td {
+    text-align: center;
 }
 table, td {
+    border-collapse: collapse;
     border: 1px solid black;
 }
 .welcome {
