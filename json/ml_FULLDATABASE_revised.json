@@ -109,9 +109,34 @@
 		}
 	},
 	"__VERB_GENERICS" : {
-		"infinitive" : "re",
 		"question" : ["ne"]
 	},
+	"__VERB_INFINITIVES" : {
+		"present" : {
+			"perfect" : ["re", false],
+			"imperfect" : ["ik", true],
+			"active" : ["uv", true],
+			"passive" : ["qe", false]
+		},
+		"past" : {
+			"perfect" : ["i", true],
+			"imperfect" : ["mel", false],
+			"active" : ["ta", false],
+			"passive" : ["te", false]
+		},
+		"future" : {
+			"perfect" : ["ny", false],
+			"imperfect" : ["le", false],
+			"active" : ["ok", true],
+			"passive" : ["ve", false]
+		},
+		"future-in-past" : {
+			"perfect" : ["ro", false],
+			"imperfect" : ["ko", false],
+			"active" : ["er", true],
+			"passive" : ["tu", false]
+		}
+	}
 	"__ABLATIVES" : {
 		"agential" : "hecer",
 		"comparative" : "locri",

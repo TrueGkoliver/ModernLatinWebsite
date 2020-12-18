@@ -1,0 +1,34 @@
+{
+	"nouns_and_verbs" : [
+		{
+			"parts" : ["circaglob", "circaglobix"],
+			"declension" : 1,
+			"common-type" : "NOUN",
+			"definition-noun" : "A ringworld."
+		},
+		{
+			"parts" : ["glob", "globix"],
+			"declension" : 1,
+			"common-type" : "NOUN",
+			"definition-noun" : "A planet."
+		},
+		{
+			"parts" : ["artiglob", "artiglobix"],
+			"declension" : 1,
+			"common-type" : "NOUN",
+			"definition-noun" : "A constructed planet."
+		},
+		{
+			"parts" : ["genetist", "genetistiv"],
+			"declension" : 2,
+			"common-type" : "NOUN",
+			"definition-noun" : "A habitat station or planet-like artificial structure."
+		},
+		{
+			"parts" : ["sachir", "sachirix"],
+			"declension" : 1,
+			"common-type" : "NOUN",
+			"definition-noun" : "A habitat station or planet-like artificial structure."
+		}
+	]
+}
