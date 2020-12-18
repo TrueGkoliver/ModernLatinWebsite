@@ -99,7 +99,8 @@
 		},
 		{
 			"parts" : ["necesseni", "necessej"],
-			"declension" : ""
+			"declension" : "1", "common-type" : "VERB",
+			"defintion-verb" : "To be necessary"
 		}
 	],
 	"amplifiers-adjectives" : [
