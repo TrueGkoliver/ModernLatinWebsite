@@ -4,58 +4,58 @@
 			"parts" : ["volo", "volix"],
 			"declension" : 2,
 			"common-type" : "VERB",
-			"definition-verb" : "To want or desire.",
-			"definition-noun" : "A want or desire."
+			"definition-verb" : "To want or desire",
+			"definition-noun" : "A want or desire"
 		},
 		{
 			"parts" : ["nolo", "nolix"],
 			"declension" : 2,
 			"common-type" : "VERB",
-			"definition-verb" : "To not want or desire.",
-			"definition-noun" : "A lack of a want or desire."
+			"definition-verb" : "To not want or desire",
+			"definition-noun" : "A lack of a want or desire"
 		},
 		{
 			"parts" : ["possu", "possuv"],
 			"declension" : 2,
 			"common-type" : "VERB",
-			"definition-verb" : "To be able to do something.",
-			"definition-noun" : "An ability."
+			"definition-verb" : "To be able to do something",
+			"definition-noun" : "An ability"
 		},
 		{
 			"parts" : ["ambula", "ambulav"],
 			"declension" : 2,
 			"common-type" : "VERB",
-			"definition-verb" : "To walk.",
-			"definition-noun" : "A walk."
+			"definition-verb" : "To walk",
+			"definition-noun" : "A walk"
 		},
 		{
 			"parts" : ["homo", "homin", "hominix"],
 			"declension" : 3,
 			"common-type" : "NOUN",
-			"definition-noun" : "A human."
+			"definition-noun" : "A human"
 		},
 		{
 			"parts" : ["vi", "vip"],
 			"declension" : 1,
 			"common-type" : "NOUN",
-			"definition-noun" : "A road."
+			"definition-noun" : "A road"
 		},
 		{
 			"parts" : ["dic", "dix"],
 			"declension" : 1,
 			"common-type" : "VERB",
-			"definition-verb" : "To create, to make."
+			"definition-verb" : "To create, to make"
 		},
 		{
 			"parts" : ["vill", "villix"],
 			"declension" : 1,
 			"common-type" : "NOUN",
-			"definition-noun" : "A house or home."
+			"definition-noun" : "A house or home"
 		},
 		{
 			"parts" : ["habita", "habitav"],
 			"declension" : 2, "common-type" : "VERB",
-			"definition-verb" : "To inhabit something or live in something."
+			"definition-verb" : "To inhabit something or live in something"
 		},
 		{
 			"parts" : ["sci", "scip"],
@@ -65,42 +65,57 @@
 		{
 			"parts" : ["canis", "cane", "canep"],
 			"declension" : 3, "common-type" : "NOUN",
-			"definition-noun" : "A dog."
+			"definition-noun" : "A dog"
 		},
 		{
 			"parts" : ["parv", "parix"],
 			"declension" : 2, "common-type" : "NOUN",
-			"definition-noun" : "Small."
+			"definition-noun" : "Small"
 		},
 		{
 			"parts" : ["magn", "magnec"],
 			"declension" : 2, "common-type" : "NOUN",
-			"definition-noun" : "Big."
+			"definition-noun" : "Big"
 		},
 		{
 			"parts" : ["pogi", "pogis"],
 			"declension" : 1, "common-type" : "VERB",
-			"definition-verb" : "To be pog."
+			"definition-verb" : "To be pog"
 		},
 		{
-			"parts" : ["poge", "pogex"],
+			"parts" : ["pog", "pogex"],
 			"declension" : 2, "common-type" : "NOUN",
-			"definition-noun" : "Pog."
+			"definition-noun" : "Pog"
 		},
 		{
 			"parts" : ["irat", "iratix"],
 			"declension" : 2, "common-type" : "NOUN",
-			"definition-noun" : "Angry."
+			"definition-noun" : "Angry"
 		},
 		{
 			"parts" : ["fess", "fessip"],
 			"declension" : 2, "common-type" : "NOUN",
-			"definition-noun" : "Tired."
+			"definition-noun" : "Tired"
 		},
 		{
 			"parts" : ["necesseni", "necessej"],
 			"declension" : "1", "common-type" : "VERB",
 			"defintion-verb" : "To be necessary"
+		},
+		{
+			"parts" : ["semp", "sempit"],
+			"declinsion" : 2, "common-type" : "NOUN",
+			"definition-noun" : "Always"
+		},
+		{
+			"parts" : ["ingens", "ingen", "ingeniv"],
+			"declinsion" : 3, "common-type" : "NOUN",
+			"definition-noun" : "Huge, especially uncomfortably or surprisingly so"
+		},
+		{
+			"parts" : ["ricu", "ricer"],
+			"declension" : 1, "common-type" : "VERB",
+			"definition-verb" : "To be rushed"
 		}
 	],
 	"amplifiers-adjectives" : [

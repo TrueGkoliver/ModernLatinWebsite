@@ -113,7 +113,8 @@
 		"question" : "ne",
 		"result" : "exus",
 		"do-er" : "emper",
-		"do-ee" : "exi"
+		"do-ee" : "exi",
+		"adverb" : "er"
 	},
 	"__ABLATIVES" : {
 		"agential" : "hecer",
