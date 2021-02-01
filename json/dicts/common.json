@@ -116,6 +116,17 @@
 			"parts" : ["ricu", "ricer"],
 			"declension" : 1, "common-type" : "VERB",
 			"definition-verb" : "To be rushed"
+		},
+		{
+			"parts" : ["victri", "victriv"],
+			"declension" : 1, "common-type" : "VERB",
+			"definition-verb" : "To succeed or do well at a task.",
+			"definition-noun" : "A success."
+		},
+		{
+			"parts" : ["habe", "habu"],
+			"declension" : 1, "common-type" : "VERB",
+			"definition-verb" : "To have"
 		}
 	],
 	"amplifiers-adjectives" : [
@@ -196,11 +207,15 @@
 		{ "name" : "post", "definition" : "after" },
 		{ "name" : "pre", "definition" : "before" },
 		{ "name" : "ad", "definition" : "To or towards" },
+		{ "name" : "ab", "definition" : "From" },
 		{ "name" : "prope", "definition" : "near" },
 		{ "name" : "apud", "definition" : "among" },
 		{ "name" : "dicir", "definition" : "far, far away from" },
 		{ "name" : "cum", "definition" : "with" }, 
-		{ "name" : "ex", "definition" : "out of, away from, from" }
+		{ "name" : "ex", "definition" : "out of, away from, from" },
+		{ "name" : "ec", "definition" : "out of, away from, from" },
+		{ "name" : "ef", "definition" : "out of, away from, from" },
+		{ "name" : "e", "definition" : "out of, away from, from" },
 	],
 	"prefixes" : [
 		{
