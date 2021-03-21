@@ -105,7 +105,7 @@
 		{
 			"parts" : ["semp", "sempit"],
 			"declinsion" : 2, "common-type" : "NOUN",
-			"definition-noun" : "Always"
+			"definition-noun" : "Always, perpetual"
 		},
 		{
 			"parts" : ["ingens", "ingen", "ingeniv"],
@@ -127,6 +127,11 @@
 			"parts" : ["habe", "habu"],
 			"declension" : 1, "common-type" : "VERB",
 			"definition-verb" : "To have"
+		},
+		{
+			"parts" : ["ad[esse]"],
+			"declension" : 2, "common-type" : "VERB",
+			"definition-noun" : "To be present"
 		}
 	],
 	"amplifiers-adjectives" : [
@@ -206,6 +211,7 @@
 		{ "name" : "in", "definition" : "inside or in" },
 		{ "name" : "post", "definition" : "after" },
 		{ "name" : "pre", "definition" : "before" },
+		{ "name" : "huc", "definition" : "here, to this place" },
 		{ "name" : "ad", "definition" : "To or towards" },
 		{ "name" : "ab", "definition" : "From" },
 		{ "name" : "prope", "definition" : "near" },

@@ -159,8 +159,11 @@ function createEsse(tense, aspect, voice) {
 	}
 	return tbr;
 }
-function createIndividualWord(tense, aspect, voice, person, number, infinitive, perfective) {
+function createIndividualWord(tense, aspect, voice, person, number, infinitive, perfective, isEsse) {
 	var tbr = "";
+	if (isEsse) {
+		return infinitive + createIndividualEsse(tense, aspect, voice, person, number);
+	}
 	if (verbTenses[tense][aspect][1]) {
 		tbr+=perfective;
 	} else {
@@ -177,7 +180,7 @@ function createIndividualWord(tense, aspect, voice, person, number, infinitive, 
 	return tbr;
 }
 function updateParticiple() {}
-function createVerb(tense, aspect, voice, infinitive, perfective) {
+function createVerb(tense, aspect, voice, infinitive, perfective, isEsse) {
 	//var tbr = document.createElement("p");
 	var tbr = document.createElement("table");
 	tbr.className = "verb_table";
@@ -222,7 +225,7 @@ function createVerb(tense, aspect, voice, infinitive, perfective) {
 			for (e = 0; e < plural_1stperson.length; e++) {
 				var pluralIn = plural_1stperson[e];
 				var cell = whatever[d].insertCell(e+1);
-				cell.innerHTML = createIndividualWord(tense, aspect, voice, person, pluralIn, infinitive, perfective);
+				cell.innerHTML = createIndividualWord(tense, aspect, voice, person, pluralIn, infinitive, perfective, isEsse);
 				//document.write(createEsse(tense, aspect, mood, person, pluralIn));
 				count++;
 			}
@@ -231,7 +234,7 @@ function createVerb(tense, aspect, voice, infinitive, perfective) {
 			for (e = 0; e < plural.length; e++) {
 				var pluralIn = plural[e];
 				var cell = whatever[d].insertCell(e+1);
-				cell.innerHTML = createIndividualWord(tense, aspect, voice, person, pluralIn, infinitive, perfective);
+				cell.innerHTML = createIndividualWord(tense, aspect, voice, person, pluralIn, infinitive, perfective, isEsse);
 				//document.write(createEsse(tense, aspect, mood, person, pluralIn));
 				count++;
 			}
@@ -276,7 +279,7 @@ function clearHidden() {
 	document.getElementById("jump_button").className = "";
 	document.getElementById("sentencefor").className = "";
 }
-function generateInfinitiveChart(infinitive, perfective) {
+function generateInfinitiveChart(infinitive, perfective, isEsse) {
     var tbr = document.createElement("table");
     tbr.className = "verb_table";
     let thead = tbr.createTHead();
@@ -324,7 +327,11 @@ function generateInfinitiveChart(infinitive, perfective) {
             var aspect = aspects[b];
             var cell = aspects_arr[b].insertCell(a+1);
             var inf = "";
-            if (verbTenses[tense][aspect][1]) {
+			if (isEsse) {
+				inf+=infinitive
+				inf+=toBe["infinitive"].slice(0, -2);
+			}
+            else if (verbTenses[tense][aspect][1]) {
                 inf+=perfective;
             } else {
                 inf+=infinitive;
@@ -363,11 +370,14 @@ function processVerbs() {
 	clearHidden();
 	let infinitive = document.getElementById("infinitive-box").value;
 	let perfective = document.getElementById("perfective-box").value;
+	let esse = document.getElementById("esse-check");
+	let isEsse = esse.checked;
+	
 	let collectiveDivIn = document.createElement("div");
     var infbold = document.createElement("b");
     infbold.className = "infinitive_boxes";
     infbold.innerHTML = "Infinitives";
-	document.body.appendChild(generateInfinitiveChart(infinitive, perfective));
+	document.body.appendChild(generateInfinitiveChart(infinitive, perfective, isEsse));
 	var a;
 	for (a = 0; a < tenses.length; a++) {
 		var tense = tenses[a];
@@ -384,7 +394,7 @@ function processVerbs() {
 			  bold.innerHTML = titleCase(tense)+", "+titleCase(aspect)+", "+titleCase(mood);
 			  divIn.className = "single_verb_class"
 			  divIn.appendChild(bold);
-			  divIn.appendChild(createVerb(tense, aspect, mood, infinitive, perfective))
+			  divIn.appendChild(createVerb(tense, aspect, mood, infinitive, perfective, isEsse))
 			  //document.body.appendChild(divIn);
 			  collectiveDivIn.appendChild(divIn);
 		  }

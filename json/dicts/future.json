@@ -29,6 +29,43 @@
 			"declension" : 1,
 			"common-type" : "NOUN",
 			"definition-noun" : "A habitat station or planet-like artificial structure."
+		},
+		{
+			"parts" : ["hyperfound", "hyperfoundix"],
+			"declension" : 2,
+			"common-type" : "NOUN",
+			"definition-noun" : "A synthesizer of materials; a hyperfoundry.",
+			"definition-verb" : "1) To use a hyperfoundry. 2) To produce extremely high amounts of a material."
+		}
+		{
+			"parts" : ["artibacteri", "artibacterix"],
+			"declension" : 1,
+			"common-type" : "NOUN",
+			"definition-noun" : "Heavily genetically-modified bacteria.",
+			"definition-verb" : "1) To create artibacteria. 2) To create a new species of artibacteria."
+		},
+		{
+			"parts" : ["naetici", "naeticux"],
+			"declension" : 2,
+			"common-type" : "NOUN",
+			"definition-noun" : "1) A Dyson Sphere 2) [rare] An object which gathers considerable amounts of power",
+			"definition-verb" : "To gather energy from a star"
+		},
+		{
+			"parts" : ["picaglob", "picaglobix"],
+			"declension" : 1,
+			"common-type" : "NOUN",
+			"definition-noun" : "An Alderson Disk."
+		}
+	],
+	"prefixes" : [
+		{
+			"name" : "ayiarcheo",
+			"definition" : "An ancient (especially ruined) structure"
+		},
+		{
+			"name" : "obrisi",
+			"definition" : "A ruined structure or planet"
 		}
 	]
 }
